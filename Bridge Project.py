@@ -109,6 +109,7 @@ for i in range(0, 2000):
         BMD[dist] = moments
 
 A = dict(sorted(BMD.items(), key=lambda item: item[1]))
+print(A)
 
 print(b)
 print(max_bmd(b, 2, 2))
@@ -116,7 +117,7 @@ print(max_bmd(b, 2, 2))
 max_shear = 0
 c = 0
 d = 0
-for i in range(0, 2000):
+for i in range(0, 2057):
     if max_shear_force(i, 2, 2) > c:
         c = max_shear_force(i, 2, 2)
         d = i

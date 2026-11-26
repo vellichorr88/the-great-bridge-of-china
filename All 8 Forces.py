@@ -1,5 +1,6 @@
 import math
-# hi
+I = 647144.941
+y_bar = 43.77
 def flex_stress(I, y):
     return (1236.7478399999993*y/I)
 
@@ -38,4 +39,17 @@ def max_p_web_shear_buckle(h, a, w, I, b_web, Q_mid):
     tau = ((5*math.pi**2*4000)/((12 * (1-0.2**2))))*((w/h)**2 + (w/a)**2)
     return tau/(shear_stress(I, b_web, Q_mid))
 
-
+print("max comp p")
+print(max_p_comp(I, (85/2+1.27)))
+print("max tens p")
+print(max_p_tens(I, (85/2+1.27)))
+print("max case 1 p")
+print(top_4_sides(77.54-1.27, 1.27, I, 85/2+1.27))
+print("max case 2 p")
+print(top_3_binded(11.23, 1.27, I, 85/2+1.27))
+print("max web buckle p")
+print(web_buckle(85+1.27/2, 1.27, I, 85+1.27/2))
+print("max glue p")
+print(glue_shear_p(I, 10, (1.27*(100)*(43.77-0.5*1.27))))
+print("max shear p")
+print(max_shear_p(I, 2*1.27, (1.27*100*(y_bar - 0.5*1.27)+2*(1.27*42.5)*(0.5*42.5) + 2*(5*1.27)*(42.5-0.5*1.27))))
