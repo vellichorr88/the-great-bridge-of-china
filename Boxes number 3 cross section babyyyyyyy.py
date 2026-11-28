@@ -46,7 +46,7 @@ print(max_p_comp(I, (h-y_bar)))
 print("max tens p")
 print(max_p_tens(I, (y_bar)))
 print("max case 1 p")
-print(top_4_sides(65-1.27, 1.27*2, I, (h-y_bar)))
+print(top_4_sides(65-1.27, 1.27, I, (h-y_bar)))
 
 print("max case 2 p")
 print(top_3_binded(18.813+0.5*1.27, 1*1.27, I, (h-y_bar)))
@@ -62,7 +62,7 @@ print("max glue p at the bottom")
 print(glue_shear_p(I, 20, (100*1.27*(y_bar - 0.5*(1.27)))))
 
 print("max shear p")
-print(max_shear_p(I, 2*1.27, (100*(1.27)*(y_bar-0.5*(1.27))+2*(1.27*5)*(y_bar-1.5*1.27)+2*1.27*(y_bar)*(0.5*y_bar))))
+print(max_shear_p(I, 2*1.27, (100*(1.27)*(y_bar-0.5*(1.27))+2*(1.27*10)*(y_bar-1.5*1.27)+2*1.27*(y_bar)*(0.5*y_bar))))
 
 print("max diaphragm stress")
 print(max_p_web_shear_buckle(93.650, 120, 1.27, I, 2*1.27,  (100*(1.27)*(y_bar-0.5*(1.27))+2*(1.27*10)*(y_bar-1.5*1.27)+2*1.27*(y_bar)*(0.5*y_bar ))))

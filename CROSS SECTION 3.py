@@ -62,4 +62,4 @@ print("max glue p at the bottom")
 print(glue_shear_p(I, 20, (100*1.27*(y_bar - 0.5*(1.27)))))
 
 print("max shear p")
-print(max_shear_p(I, 2*1.27, (100*(1.27)*(y_bar-0.5*(1.27))+2*(1.27*5)*(y_bar-1.5*1.27)+2*1.27*(y_bar)*(0.5*y_bar))))
+print(max_shear_p(I, 2*1.27, (100*(1.27)*(y_bar-0.5*(1.27))+2*(1.27*10)*(y_bar-1.5*1.27)+2*1.27*(y_bar)*(0.5*y_bar))))
