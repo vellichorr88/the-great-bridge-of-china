@@ -47,7 +47,7 @@ print(max_p_tens(I, (y_bar)))
 print("max case 1 p")
 print(top_4_sides(67.54-1.27, 1.27*3, I, (h-y_bar)))
 
-print("max case 2 p")
+print("max case 2 p") 
 print(top_3_binded(16.23+0.5*1.27, 1.27*3, I, (h-y_bar)))
 
 print("max web buckle p")
@@ -59,3 +59,6 @@ print(glue_shear_p(I, 20, (100*3*1.27*(h-y_bar - 0.5*(3*1.27)))))
 
 print("max shear p")
 print(max_shear_p(I, 2*1.27, (2*1.27*y_bar*(y_bar/2))))
+
+print("tau force")
+print(max_p_web_shear_buckle(93.650, 100, 1.27, I, 1.27, (2*1.27*y_bar*(y_bar/2))))

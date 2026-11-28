@@ -49,7 +49,7 @@ print("max case 1 p")
 print(top_4_sides(65-1.27, 1.27*3, I, (h-y_bar)))
 
 print("max case 2 p")
-print(top_3_binded(18.813+0.5*1.27, 1*1.27, I, (h-y_bar)))
+print(top_3_binded(17.5+0.5*1.27, 1*1.27, I, (h-y_bar)))
 
 print("max web buckle p")
 print(web_buckle(h - y_bar - 1.5*1.27, 1.27, I, h - y_bar - 1.5*1.27 ))
@@ -59,7 +59,7 @@ print("max glue p at the top")
 print(glue_shear_p(I, 20, (100*1.27*(h-y_bar - 0.5*(1.27)))))
 
 print("max glue p at the bottom")
-print(glue_shear_p(I, 20, (100*1.27*(y_bar - 0.5*(3*1.27)))))
+print(glue_shear_p(I, 20, (100*1.27*(y_bar - 0.5*(1.27)))))
 
 print("max shear p")
-print(max_shear_p(I, 2*1.27, (100*(1.27)*(y_bar-0.5*(1.27))+2*(1.27*5)*(y_bar-1.5*1.27)+2*1.27*(y_bar)*(0.5*y_bar))))
+print(max_shear_p(I, 2*1.27, (100*(1.27)*(y_bar-0.5*(1.27))+2*(1.27*10)*(y_bar-1.5*1.27)+2*1.27*(y_bar-1.27)*(0.5*(y_bar-1.27)))))
